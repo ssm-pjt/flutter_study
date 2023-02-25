@@ -35,6 +35,31 @@ class _MyWidgetState extends State<MyWidget> {
           children: [
             Text('Width : $responsiveWidth'),
             Text('Heigth : $responsiveHeight'),
+            Expanded(
+              child: ListView.builder(
+                itemCount: 10,
+                itemBuilder: (context, index) {
+                  return Column(
+                    children: [
+                      Container(
+                        color: Colors.cyan,
+                        width: responsiveWidth,
+                        height: 30,
+                        child: const Text(
+                          'Size',
+                          style: TextStyle(
+                            fontSize: 20,
+                          ),
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      )
+                    ],
+                  );
+                },
+              ),
+            ),
           ],
         ),
       ),
