@@ -26,7 +26,7 @@ class _MyCustomerFormState extends State<MyCustomerForm> {
   void initState() {
     super.initState();
 
-    myController.addListener(_printLatestValue);
+    myController.addListener(_debugPrintLatestValue);
   }
 
   @override
@@ -36,8 +36,8 @@ class _MyCustomerFormState extends State<MyCustomerForm> {
     super.dispose();
   }
 
-  void _printLatestValue() {
-    print('두번째 text field: ${myController.text}');
+  void _debugPrintLatestValue() {
+    debugPrint('두번째 text field: ${myController.text}');
   }
 
   @override
@@ -53,7 +53,7 @@ class _MyCustomerFormState extends State<MyCustomerForm> {
           children: <Widget>[
             TextField(
               onChanged: (text) {
-                print("첫번째 text field: $text");
+                debugPrint("첫번째 text field: $text");
               },
               controller: myController,
             ),

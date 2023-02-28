@@ -1,3 +1,4 @@
+// ignore: file_names
 import 'package:flutter/material.dart';
 
 class MyDrawer extends StatelessWidget {
@@ -26,7 +27,7 @@ class MyDrawer extends StatelessWidget {
             accountName: const Text('TEST'),
             accountEmail: const Text('gobooky@gmail'),
             onDetailsPressed: () {
-              print('arrow is clicked');
+              debugPrint('arrow is clicked');
             },
             decoration: const BoxDecoration(
                 color: Colors.red,
@@ -41,7 +42,7 @@ class MyDrawer extends StatelessWidget {
             ),
             title: const Text('Home'),
             onTap: () {
-              print('Home is clicked');
+              debugPrint('Home is clicked');
             },
             trailing: const Icon(Icons.add),
           ),
@@ -52,7 +53,7 @@ class MyDrawer extends StatelessWidget {
             ),
             title: const Text('Setting'),
             onTap: () {
-              print('Setting is clicked');
+              debugPrint('Setting is clicked');
             },
             trailing: const Icon(Icons.add),
           ),
@@ -63,7 +64,7 @@ class MyDrawer extends StatelessWidget {
             ),
             title: const Text('Q&A'),
             onTap: () {
-              print('Q&A is clicked');
+              debugPrint('Q&A is clicked');
             },
             trailing: const Icon(Icons.add),
           )

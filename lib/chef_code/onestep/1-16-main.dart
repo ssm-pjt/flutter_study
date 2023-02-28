@@ -1,3 +1,4 @@
+// ignore: file_names
 import 'package:flutter/material.dart';
 import 'package:flutter_study/chef_code/onestep/1-16-drawer.dart';
 
@@ -29,12 +30,12 @@ class MyPage extends StatelessWidget {
           actions: [
             IconButton(
                 onPressed: () {
-                  print('shopping_basket button is clicked');
+                  debugPrint('shopping_basket button is clicked');
                 },
                 icon: const Icon(Icons.shopping_basket)),
             IconButton(
                 onPressed: () {
-                  print('search button is clicked');
+                  debugPrint('search button is clicked');
                 },
                 icon: const Icon(Icons.search)),
           ],

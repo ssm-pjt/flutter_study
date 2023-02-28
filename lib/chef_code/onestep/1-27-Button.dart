@@ -33,7 +33,7 @@ class FirstPage extends StatelessWidget {
         child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
           TextButton(
               onPressed: () {
-                print('TextButton');
+                debugPrint('TextButton');
               },
               style: TextButton.styleFrom(foregroundColor: Colors.black),
               child: const Text(
@@ -43,7 +43,7 @@ class FirstPage extends StatelessWidget {
               )),
           ElevatedButton(
             onPressed: () {
-              print('Elevate Button');
+              debugPrint('Elevate Button');
             },
             style: ElevatedButton.styleFrom(backgroundColor: Colors.black),
             child: const Text('ElevateButton'),
@@ -58,7 +58,7 @@ class FirstPage extends StatelessWidget {
             children: [
               TextButton(
                   onPressed: () {
-                    print('TextButton');
+                    debugPrint('TextButton');
                   },
                   style: TextButton.styleFrom(foregroundColor: Colors.black),
                   child: const Text(
@@ -68,7 +68,7 @@ class FirstPage extends StatelessWidget {
                   )),
               ElevatedButton(
                 onPressed: () {
-                  print('Elevate Button');
+                  debugPrint('Elevate Button');
                 },
                 style: ElevatedButton.styleFrom(backgroundColor: Colors.black),
                 child: const Text('ElevateButton'),

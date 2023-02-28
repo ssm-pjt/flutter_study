@@ -5,11 +5,11 @@ void main(List<String> args) {
   runApp(const ButtomSample());
 }
 
-Future printIps() async {
+Future debugPrintIps() async {
   for (var interface in await NetworkInterface.list()) {
-    print('== Interface: ${interface.name} ==');
+    debugPrint('== Interface: ${interface.name} ==');
     for (var addr in interface.addresses) {
-      print(
+      debugPrint(
           '${addr.address} ${addr.host} ${addr.isLoopback} ${addr.rawAddress} ${addr.type.name}');
     }
   }
@@ -56,7 +56,7 @@ class MyButtonPage extends StatelessWidget {
             ),
             OutlinedButton(
               onPressed: () {
-                printIps();
+                debugPrintIps();
               },
               style: const ButtonStyle(
                 backgroundColor: MaterialStatePropertyAll(Colors.black),

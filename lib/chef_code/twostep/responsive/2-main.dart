@@ -46,7 +46,7 @@ class _MyWidgetState extends State<MyWidget> {
                         width: responsiveWidth,
                         height: 30,
                         child: const Text(
-                          'Size',
+                          '문시원이 바보',
                           style: TextStyle(
                             fontSize: 20,
                           ),
