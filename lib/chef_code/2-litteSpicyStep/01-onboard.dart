@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '2-01-Onboard_board.dart';
+import '01-onboardBoard.dart';
 
 /*   플러터 2.0 이후로 변화된 Button 명에 따른 예저 체크
  RaisedButton -> ElevatedButton
@@ -24,7 +23,7 @@ class StudyApp extends StatelessWidget {
         // backgroundColor: Color.fromARGB(255, 36, 34, 34),
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyOnBoard(),
+      home: const MyOnBoard(),
     );
   }
 }
