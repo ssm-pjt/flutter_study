@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_study/chef_code/onestep/screen/Navigator2_ScreenA.dart';
-import 'package:flutter_study/chef_code/onestep/screen/Navigator2_ScreenB.dart';
-import 'package:flutter_study/chef_code/onestep/screen/Navigator2_ScreenC.dart';
+import 'package:flutter_study/chef_code/1-mildStep/screen/navigator2_ScreenA.dart';
+import 'package:flutter_study/chef_code/1-mildStep/screen/navigator2_ScreenB.dart';
+import 'package:flutter_study/chef_code/1-mildStep/screen/navigator2_ScreenC.dart';
 
 void main() {
   runApp(const NavigatorStudy());

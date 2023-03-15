@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:introduction_screen/introduction_screen.dart';
 
-import '2-01-Onboard.dart';
+import '01-onboard.dart';
 
 class MyOnBoard extends StatelessWidget {
   const MyOnBoard({super.key});
