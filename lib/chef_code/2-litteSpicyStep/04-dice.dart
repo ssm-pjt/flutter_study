@@ -7,7 +7,10 @@ class Dice extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(),
+        appBar: AppBar(
+          backgroundColor: Colors.redAccent,
+        ),
+        backgroundColor: Colors.redAccent,
         body: Container(child: const Text('Dice')),
       ),
     );
